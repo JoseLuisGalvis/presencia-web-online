@@ -1,0 +1,621 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: rgb(227, 241, 247);
+}
+
+.bienvenidos {
+  width: 100%;
+  background-image: url("./img/c2.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 1em;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  justify-content: center;
+  text-align: center;
+}
+
+.proyectos {
+  background-color: #1ea1ee;
+  padding-top: 1em;
+}
+
+.contacto {
+  background-color: #44e9f5;
+  padding-top: 1em;
+}
+
+.encabezado {
+  width: 100%;
+}
+
+.navbar {
+  border-radius: 12px 2.5em;
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-brand img {
+  width: 3em;
+  height: 3em;
+  margin: 0 1em 0 0;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  background-color: rgba(0, 0, 255, 0.4);
+  border-bottom: 3px solid blue;
+  color: #f2f2f2;
+  font-weight: 600;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 0 1.5em 0 0 !important;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  background-color: rgba(117, 217, 241, 0.4);
+  border-bottom: 3px solid blue;
+  color: #f2f2f2;
+  font-weight: 500;
+  border-radius: 0 2em 0 0 !important;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-collapse {
+  position: relative;
+  z-index: 3;
+}
+
+.texto-bienvenidos {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.texto-bienvenidos h3 {
+  font-weight: 400;
+}
+
+.btn-primary {
+  color: #ffff;
+  background-color: #000060;
+  border-color: #000050;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+}
+
+.visit {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #ffff;
+}
+
+.visit h5,
+h6 {
+  font-weight: 900;
+  text-shadow: 0 6px 6px rgba(0, 0, 0, 0.7);
+}
+
+/****************   Seccion Quienes Somos   *****************************/
+
+.quienes-somos {
+  background-color: #000050;
+  color: #ffff;
+  padding-top: 1em;
+}
+
+#quienes-somos {
+  height: 74vh;
+}
+
+.quienes-somos .shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(255, 255, 255, 0.33) !important;
+}
+
+.row {
+  width: 100%;
+  margin: 0 !important;
+}
+
+.row img {
+  width: 40%;
+  height: 40%;
+  padding: 0;
+  border: 5px solid #ffff;
+  box-shadow: 0 1rem 3rem rgba(255, 255, 255, 0.33) !important;
+}
+
+.row h2 {
+  font-size: 2.5rem;
+}
+
+.row p {
+  font-size: 1.1rem;
+}
+
+/********************   Indices   ************************************/
+
+#indices {
+  height: 13vh;
+  background-color: #ffff;
+  color: #000050;
+  border-radius: 12px 2.5em;
+}
+
+.box h4 {
+  font-size: 1.8rem;
+  margin-bottom: 0.15rem;
+}
+
+.box p {
+  font-size: 2.5rem;
+}
+
+/****************   Seccion Servicios   *****************************/
+
+.servicios {
+  background-color: #00e1ed;
+  padding-top: 1em;
+}
+
+.servicios .container {
+  background-color: #051314;
+  padding: 0 !important;
+  border-radius: 12px 2.5em;
+  box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.5);
+}
+
+#miContenedor {
+  background-image: url("../img/fondo3.jpg");
+  background-repeat: no-repeat;
+  background-position: -100% 0;
+  animation: animacionBackground 8s infinite;
+}
+
+@keyframes animacionBackground {
+  0% {
+    background-position: -100% 0;
+  }
+
+  50% {
+    background-position: 100% 0;
+  }
+
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+#blue {
+  color: #ffff;
+  text-shadow: 2px 6px 6px rgba(255, 255, 255, 0.5);
+}
+
+.fas {
+  color: rgba(15, 50, 247, 0.863);
+  text-shadow: 2px 6px 6px rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.fas:hover {
+  color: rgba(6, 4, 105, 0.795);
+  cursor: pointer;
+}
+
+#cards {
+  height: 77.5vh;
+}
+
+#card {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffff;
+  text-shadow: 2px 6px 6px rgba(255, 255, 255, 0.6);
+  margin: 1em 0;
+  border-radius: 1em 2.5em;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3),
+    inset 0 0 20px rgba(255, 255, 255, 0.4);
+  transition: transform 3s ease; /* Agrega una transición suave para el efecto de movimiento */
+}
+
+#card:hover {
+  background-color: #54baf5;
+  color: #ffff;
+  text-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3),
+    inset 0 0 20px rgba(255, 255, 255, 0.4);
+  transform: translateY(-30px); /* Mueve la tarjeta -10px en el eje Z */
+}
+
+/*************************   Seccion Proyectos   ****************************/
+
+.proyectos {
+  width: 100%;
+  background: #000050;
+}
+
+#row-proyectos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  padding-top: 2em;
+}
+
+.section1 {
+  width: 75%;
+  height: 75vh;
+  display: grid;
+  grid-template-areas:
+    "A A C C"
+    "B B C C"
+    "B B D D";
+  grid-template-rows: 24% 24% 24% 24%;
+  grid-template-columns: 24% 24% 24% 24%;
+  gap: 1em 1.2em;
+  padding: 5em 2em 0 2em;
+  transition: all 0.2s ease; /* Animation */
+}
+
+.section1 img:hover {
+  transform: scale(
+    1.2
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.section1 > .A {
+  grid-area: A;
+  color: #fff;
+  background-color: #000090;
+  border-radius: 1em;
+}
+
+.A img {
+  width: 100%;
+  height: 100%;
+  border: 3px solid #fff;
+  border-radius: 1em;
+  box-shadow: 5px 6px 8px rgba(255, 255, 255, 0.2);
+}
+
+.section1 > .B {
+  grid-area: B;
+  color: #fff;
+  background-color: #000090;
+  border-radius: 1em;
+}
+
+.B img {
+  width: 100%;
+  height: 100%;
+  border: 3px solid #fff;
+  border-radius: 1em;
+  box-shadow: 5px 6px 8px rgba(255, 255, 255, 0.2);
+}
+
+.section1 > .C {
+  grid-area: C;
+  color: #fff;
+  background-color: #000090;
+  border-radius: 1em;
+}
+
+.C img {
+  width: 100%;
+  height: 100%;
+  border: 3px solid #fff;
+  border-radius: 1em;
+  box-shadow: 5px 6px 8px rgba(255, 255, 255, 0.2);
+}
+
+.section1 > .D {
+  grid-area: D;
+  color: #fff;
+  background-color: #000090;
+  border-radius: 1em;
+}
+
+.D img {
+  width: 100%;
+  height: 100%;
+  border: 3px solid #fff;
+  border-radius: 1em;
+  box-shadow: 5px 6px 8px rgba(255, 255, 255, 0.2);
+}
+
+/*************************   Seccion Contacto   ****************************/
+
+#form {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+}
+
+.form-group label {
+  width: 35%;
+  float: inline-end;
+}
+
+#formulario {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1em 1.5em;
+  border-radius: 12px 2em;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+.col-md-4 h4 {
+  font-size: 0.5em;
+}
+
+.col-md-4 p {
+  font-size: 0.5em;
+}
+
+footer {
+  background-color: #fff;
+  padding: 1.5em 2em;
+  border-radius: 12px 2em;
+}
+/*************************   Responsive   ****************************/
+
+/*************************   Responsive 1025 - 1440   min-heigth: 600px ****************/
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  /****************   Seccion Quienes Somos   *****************************/
+
+  .col-md-6 {
+    max-width: 100%;
+    padding: 0;
+  }
+  /*  .row img {
+        width: 13rem;
+        height: 13rem;
+    }
+*/
+  .row h2 {
+    font-size: 2rem;
+  }
+
+  .row p {
+    font-size: 1.2rem;
+  }
+
+  /******************   Indices   **********************************/
+
+  #indices .col {
+    padding: 5px 3px;
+  }
+
+  .box h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.15rem;
+  }
+
+  .box p {
+    font-size: 2rem;
+  }
+}
+
+/*************************   Responsive 769 - 1024   min-heigth: 600px   ****************/
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /****************   Seccion Quienes Somos   *****************************/
+
+  .col-md-6 {
+    max-width: 100%;
+    padding: 0;
+  }
+  /*
+        .row img {
+            width: 12rem;
+            height: 12rem;
+        }
+*/
+  .row h2 {
+    font-size: 2rem;
+  }
+
+  .row p {
+    font-size: 1.2rem;
+  }
+
+  /******************   Indices   **********************************/
+
+  #indices .col {
+    padding: 5px 3px;
+  }
+
+  .box h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.15rem;
+  }
+
+  .box p {
+    font-size: 1.8rem;
+  }
+}
+
+/*************************   Responsive 481 - 768   min-heigth: 600px   ****************/
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .navbar {
+    background-color: transparent !important;
+  }
+
+  .navbar-light,
+  .navbar-brand {
+    color: #ffff !important;
+    font-weight: bold;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  #navbarTogglerDemo02 {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 12px 2.5em;
+    padding: 0 0 0 1em;
+  }
+
+  .nav-link {
+    color: #ffff !important;
+    font-weight: bold;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .navbar-brand {
+    margin-right: 0.25rem;
+    font-size: 1.1rem;
+    color: #ffff;
+  }
+
+  .navbar-brand img {
+    width: 2em;
+    height: 2em;
+    margin: 0 0.5em 0 0;
+    border-radius: 0.3em;
+  }
+
+  .navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #ffff !important;
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+  }
+
+  /****************   Seccion Quienes Somos   *****************************/
+  /*
+    .row img {
+        width: 8rem;
+        height: 8rem;
+    }
+*/
+  .row h2 {
+    font-size: 1.5rem;
+  }
+
+  .row p {
+    font-size: 1rem;
+  }
+
+  /******************   Indices   **********************************/
+
+  #indices {
+    height: 15vh;
+  }
+
+  #indices .col {
+    padding: 5px 3px;
+  }
+
+  .box h4 {
+    font-size: 1rem;
+    margin-bottom: 0.15rem;
+  }
+
+  .box p {
+    font-size: 1.5rem;
+  }
+}
+
+/*************************   Responsive < 480   min-heigth: 530px   ****************/
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 !important;
+  }
+
+  .navbar {
+    background-color: transparent !important;
+  }
+
+  .navbar-light,
+  .navbar-brand {
+    color: #ffff !important;
+    font-weight: bold;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  #navbarTogglerDemo02 {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 12px 2.5em;
+    padding: 0 0 0 1em;
+  }
+
+  .nav-link {
+    color: #ffff !important;
+    font-weight: bold;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .navbar-brand {
+    margin-right: 0.25rem;
+    font-size: 1.1rem;
+    color: #ffff;
+  }
+
+  .navbar-brand img {
+    width: 2em;
+    height: 2em;
+    margin: 0 0.5em 0 0;
+    border-radius: 0.3em;
+  }
+
+  .navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #ffff !important;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  /****************   Seccion Quienes Somos   *****************************/
+  .row h2 {
+    font-size: 1.2rem;
+  }
+
+  .row p {
+    font-size: 0.8rem;
+  }
+
+  /******************   Indices   **********************************/
+
+  #indices .col {
+    padding: 5px 3px;
+  }
+
+  .box h4 {
+    font-size: 0.7rem;
+    margin-bottom: 0.15rem;
+  }
+
+  .box p {
+    font-size: 1.3rem;
+  }
+}
